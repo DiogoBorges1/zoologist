@@ -883,15 +883,16 @@ dependencies = [
     { name = "scikit-learn" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "ipykernel" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "ipykernel", marker = "extra == 'dev'", specifier = ">=7.4.0" },
     { name = "pandas", specifier = "<3" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
 ]
-provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=6.29.5" }]
