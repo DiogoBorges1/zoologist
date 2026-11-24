@@ -16,3 +16,6 @@ models/
 *.joblib
 *.keras
 *.h5
+
+# Data
+*.csv
