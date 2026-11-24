@@ -12,4 +12,4 @@ COPY models/ ./models/
 
 RUN uv sync --locked --no-dev
 
-CMD ["uv", "run", "uvicorn", "api.fast:app", "--host", "0.0.0.0"]
+CMD ["uv", "run", "uvicorn", "api.fast:app", "--host", "0.0.0.0", "--port", "8080"]
